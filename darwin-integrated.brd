@@ -10,7 +10,7 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="PWR" color="16" fill="3" visible="no" active="yes"/>
-<layer number="15" name="GND" color="23" fill="4" visible="yes" active="yes"/>
+<layer number="15" name="GND" color="23" fill="4" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -2476,11 +2476,7 @@ design rules under a new name.</description>
 <wire x1="53.428" y1="43.1292" x2="54.2544" y2="43.1292" width="0.1524" layer="1"/>
 <wire x1="54.2544" y1="43.1292" x2="54.3407625" y2="43.2155625" width="0.1524" layer="1"/>
 <contactref element="U$10" pad="P3"/>
-<wire x1="18.41" y1="47.73" x2="18.4116" y2="47.73" width="0.1524" layer="16"/>
-<wire x1="20.4216" y1="45.72" x2="18.4116" y2="47.73" width="0.1524" layer="16"/>
-<via x="20.4216" y="45.72" extent="1-16" drill="0.35"/>
-<wire x1="20.4216" y1="45.72" x2="33.528" y2="45.72" width="0.1524" layer="1"/>
-<wire x1="33.528" y1="45.72" x2="35.052" y2="44.196" width="0.1524" layer="1"/>
+<wire x1="32.766" y1="46.482" x2="35.052" y2="44.196" width="0.1524" layer="1"/>
 <via x="35.052" y="44.196" extent="1-16" drill="0.35"/>
 <wire x1="35.052" y1="44.196" x2="35.5092" y2="43.7388" width="0.1524" layer="16"/>
 <wire x1="35.5092" y1="43.7388" x2="35.5092" y2="42.95065625" width="0.1524" layer="16"/>
@@ -2490,6 +2486,8 @@ design rules under a new name.</description>
 <wire x1="53.8984" y1="35.46525" x2="54.3407625" y2="35.9076125" width="0.1524" layer="16"/>
 <wire x1="35.5092" y1="42.95065625" x2="48.13225625" y2="30.3276" width="0.1524" layer="16"/>
 <wire x1="49.40374375" y1="30.3276" x2="53.8984" y2="34.82225625" width="0.1524" layer="16"/>
+<wire x1="18.41" y1="47.73" x2="19.658" y2="46.482" width="0.1524" layer="1"/>
+<wire x1="19.658" y1="46.482" x2="32.766" y2="46.482" width="0.1524" layer="1"/>
 </signal>
 <signal name="CORE_SCL">
 <contactref element="BRAIN" pad="87"/>
