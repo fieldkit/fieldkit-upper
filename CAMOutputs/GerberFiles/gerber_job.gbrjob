@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-05-23T22:51:52Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.99,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "darwin-integrated"
+        },
+        "Owner": "Bradley Gawthrop <bradley@the-accumulator.net>",
+        "Size": {
+            "X": 96,
+            "Y": 62
+        }
+    }
+}
