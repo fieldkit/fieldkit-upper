@@ -11726,9 +11726,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="microbuilder" deviceset="SAMD51PXXA" device=""/>
+<part name="BRAIN" library="microbuilder" deviceset="SAMD51PXXA" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
-<part name="U$2" library="Conservify" deviceset="PCF85363ATT" device="" package3d_urn="urn:adsk.eagle:package:10002685/1"/>
+<part name="RTC" library="Conservify" deviceset="PCF85363ATT" device="" package3d_urn="urn:adsk.eagle:package:10002685/1"/>
 <part name="U$3" library="Conservify" deviceset="TC58CVG1S3HRAIG" device=""/>
 <part name="U$4" library="Conservify" deviceset="TC58CVG1S3HRAIG" device=""/>
 <part name="U$5" library="Conservify" deviceset="TC58CVG1S3HRAIG" device=""/>
@@ -11736,7 +11736,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="U$7" library="Conservify" deviceset="DSK-3R3H204T614-H2L" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SMB" package3d_urn="urn:adsk.eagle:package:43404/2"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
-<part name="U1" library="microbuilder" deviceset="SPIFLASH_SOIC8" device="208MIL"/>
+<part name="FLASH" library="microbuilder" deviceset="SPIFLASH_SOIC8" device="208MIL"/>
 <part name="U$8" library="Conservify" deviceset="MOLEX-47491-0001" device=""/>
 <part name="U$9" library="Conservify" deviceset="DM3D-SF" device=""/>
 <part name="U$10" library="Conservify" deviceset="SCREEN" device=""/>
@@ -11802,16 +11802,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="254" y="-142.24" size="12.7" layer="94">CONN</text>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="60.96" y="66.04" smashed="yes"/>
-<instance part="U$1" gate="G$2" x="134.62" y="66.04" smashed="yes"/>
-<instance part="U$1" gate="G$3" x="55.88" y="20.32" smashed="yes"/>
-<instance part="U$1" gate="G$4" x="129.54" y="17.78" smashed="yes"/>
-<instance part="U$1" gate="G$5" x="160.02" y="63.5" smashed="yes"/>
+<instance part="BRAIN" gate="G$1" x="60.96" y="66.04" smashed="yes"/>
+<instance part="BRAIN" gate="G$2" x="134.62" y="66.04" smashed="yes"/>
+<instance part="BRAIN" gate="G$3" x="55.88" y="20.32" smashed="yes"/>
+<instance part="BRAIN" gate="G$4" x="129.54" y="17.78" smashed="yes"/>
+<instance part="BRAIN" gate="G$5" x="160.02" y="63.5" smashed="yes"/>
 <instance part="C1" gate="G$1" x="-17.78" y="-96.52" smashed="yes">
 <attribute name="NAME" x="-16.764" y="-95.885" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-16.764" y="-100.711" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="1" x="45.72" y="-45.72" smashed="yes"/>
+<instance part="RTC" gate="1" x="45.72" y="-45.72" smashed="yes"/>
 <instance part="U$3" gate="G$1" x="152.4" y="-15.24" smashed="yes"/>
 <instance part="U$4" gate="G$1" x="152.4" y="-33.02" smashed="yes"/>
 <instance part="U$5" gate="G$1" x="152.4" y="-50.8" smashed="yes"/>
@@ -11828,7 +11828,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="NAME" x="-3.81" y="-31.5214" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-3.81" y="-36.322" size="1.778" layer="96"/>
 </instance>
-<instance part="U1" gate="G$1" x="152.4" y="-99.06" smashed="yes">
+<instance part="FLASH" gate="G$1" x="152.4" y="-99.06" smashed="yes">
 <attribute name="NAME" x="139.7" y="-86.36" size="1.778" layer="95"/>
 <attribute name="VALUE" x="139.7" y="-109.22" size="1.778" layer="95"/>
 </instance>
@@ -11943,67 +11943,67 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <nets>
 <net name="CLOCK" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA00"/>
+<pinref part="BRAIN" gate="G$1" pin="PA00"/>
 <wire x1="0" y1="86.36" x2="-12.7" y2="86.36" width="0.1524" layer="91"/>
 <label x="-15.24" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="1" pin="CLK"/>
+<pinref part="RTC" gate="1" pin="CLK"/>
 <wire x1="63.5" y1="-43.18" x2="78.74" y2="-43.18" width="0.1524" layer="91"/>
 <label x="71.12" y="-43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="QSPI_IO0" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA08"/>
+<pinref part="BRAIN" gate="G$1" pin="PA08"/>
 <wire x1="0" y1="63.5" x2="-12.7" y2="63.5" width="0.1524" layer="91"/>
 <label x="-15.24" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="MOSI"/>
+<pinref part="FLASH" gate="G$1" pin="MOSI"/>
 <wire x1="137.16" y1="-93.98" x2="119.38" y2="-93.98" width="0.1524" layer="91"/>
 <label x="121.92" y="-93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="QSPI_IO1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA09"/>
+<pinref part="BRAIN" gate="G$1" pin="PA09"/>
 <wire x1="0" y1="60.96" x2="-12.7" y2="60.96" width="0.1524" layer="91"/>
 <label x="-15.24" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="MISO"/>
+<pinref part="FLASH" gate="G$1" pin="MISO"/>
 <wire x1="137.16" y1="-96.52" x2="119.38" y2="-96.52" width="0.1524" layer="91"/>
 <label x="121.92" y="-96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="QSPI_IO2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA10"/>
+<pinref part="BRAIN" gate="G$1" pin="PA10"/>
 <wire x1="0" y1="58.42" x2="-12.7" y2="58.42" width="0.1524" layer="91"/>
 <label x="-15.24" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="WP#/IO2"/>
+<pinref part="FLASH" gate="G$1" pin="WP#/IO2"/>
 <wire x1="137.16" y1="-101.6" x2="119.38" y2="-101.6" width="0.1524" layer="91"/>
 <label x="121.92" y="-101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="QSPI_IO3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA11\"/>
+<pinref part="BRAIN" gate="G$1" pin="PA11\"/>
 <wire x1="0" y1="55.88" x2="-12.7" y2="55.88" width="0.1524" layer="91"/>
 <label x="-15.24" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="HOLD#/IO3"/>
+<pinref part="FLASH" gate="G$1" pin="HOLD#/IO3"/>
 <wire x1="137.16" y1="-104.14" x2="119.38" y2="-104.14" width="0.1524" layer="91"/>
 <label x="121.92" y="-104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOD_SDA" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC16"/>
+<pinref part="BRAIN" gate="G$3" pin="PC16"/>
 <wire x1="35.56" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
 <label x="48.26" y="35.56" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12015,7 +12015,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_SCL" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC17"/>
+<pinref part="BRAIN" gate="G$3" pin="PC17"/>
 <wire x1="35.56" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
 <label x="48.26" y="33.02" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12027,7 +12027,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="RAD_SDA" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC22"/>
+<pinref part="BRAIN" gate="G$3" pin="PC22"/>
 <wire x1="35.56" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
 <label x="50.8" y="20.32" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12039,7 +12039,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="RAD_SCL" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC23"/>
+<pinref part="BRAIN" gate="G$3" pin="PC23"/>
 <wire x1="35.56" y1="17.78" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
 <label x="50.8" y="17.78" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12051,31 +12051,31 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="QSPI_SCK" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB10"/>
+<pinref part="BRAIN" gate="G$2" pin="PB10"/>
 <wire x1="76.2" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
 <label x="63.5" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="SCK"/>
+<pinref part="FLASH" gate="G$1" pin="SCK"/>
 <wire x1="137.16" y1="-91.44" x2="119.38" y2="-91.44" width="0.1524" layer="91"/>
 <label x="121.92" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="QSPI_CS" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB11"/>
+<pinref part="BRAIN" gate="G$2" pin="PB11"/>
 <wire x1="76.2" y1="55.88" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
 <label x="63.5" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="SSEL"/>
+<pinref part="FLASH" gate="G$1" pin="SSEL"/>
 <wire x1="137.16" y1="-99.06" x2="119.38" y2="-99.06" width="0.1524" layer="91"/>
 <label x="121.92" y="-99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FLASH_MOSI" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB12"/>
+<pinref part="BRAIN" gate="G$2" pin="PB12"/>
 <wire x1="76.2" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 <label x="60.96" y="53.34" size="1.778" layer="95"/>
 </segment>
@@ -12102,7 +12102,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="FLASH_SCK" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB13"/>
+<pinref part="BRAIN" gate="G$2" pin="PB13"/>
 <wire x1="76.2" y1="50.8" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
 <label x="60.96" y="50.8" size="1.778" layer="95"/>
 </segment>
@@ -12129,7 +12129,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="FLASH_MISO" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB15"/>
+<pinref part="BRAIN" gate="G$2" pin="PB15"/>
 <wire x1="76.2" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
 <label x="60.96" y="45.72" size="1.778" layer="95"/>
 </segment>
@@ -12156,7 +12156,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="SD_MOSI" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB16"/>
+<pinref part="BRAIN" gate="G$2" pin="PB16"/>
 <wire x1="111.76" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
 <label x="124.46" y="86.36" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12168,7 +12168,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="SD_SCK" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB17"/>
+<pinref part="BRAIN" gate="G$2" pin="PB17"/>
 <wire x1="111.76" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
 <label x="124.46" y="83.82" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12180,7 +12180,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="SD_SS" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB18"/>
+<pinref part="BRAIN" gate="G$2" pin="PB18"/>
 <wire x1="111.76" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
 <label x="124.46" y="81.28" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12192,7 +12192,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="SD_MISO" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB19"/>
+<pinref part="BRAIN" gate="G$2" pin="PB19"/>
 <wire x1="111.76" y1="78.74" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
 <label x="124.46" y="78.74" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12204,12 +12204,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="CORE_SDA" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB20"/>
+<pinref part="BRAIN" gate="G$2" pin="PB20"/>
 <wire x1="111.76" y1="76.2" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
 <label x="127" y="76.2" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="1" pin="SDA"/>
+<pinref part="RTC" gate="1" pin="SDA"/>
 <wire x1="63.5" y1="-48.26" x2="71.12" y2="-48.26" width="0.1524" layer="91"/>
 <label x="66.04" y="-48.26" size="1.778" layer="95"/>
 </segment>
@@ -12226,12 +12226,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="CORE_SCL" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB21"/>
+<pinref part="BRAIN" gate="G$2" pin="PB21"/>
 <wire x1="111.76" y1="73.66" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
 <label x="127" y="73.66" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="1" pin="SCL"/>
+<pinref part="RTC" gate="1" pin="SCL"/>
 <wire x1="63.5" y1="-45.72" x2="71.12" y2="-45.72" width="0.1524" layer="91"/>
 <label x="66.04" y="-45.72" size="1.778" layer="95"/>
 </segment>
@@ -12248,7 +12248,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="GPS_TX" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB24"/>
+<pinref part="BRAIN" gate="G$2" pin="PB24"/>
 <wire x1="111.76" y1="63.5" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
 <label x="127" y="63.5" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12260,7 +12260,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="GPS_RX" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB25"/>
+<pinref part="BRAIN" gate="G$2" pin="PB25"/>
 <wire x1="111.76" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
 <label x="127" y="60.96" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12272,7 +12272,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="RADIO_SCK" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB27"/>
+<pinref part="BRAIN" gate="G$2" pin="PB27"/>
 <wire x1="111.76" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
 <label x="129.54" y="55.88" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12284,7 +12284,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="RADIO_MISO" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB29"/>
+<pinref part="BRAIN" gate="G$2" pin="PB29"/>
 <wire x1="111.76" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
 <label x="129.54" y="50.8" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12296,7 +12296,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_MOSI" class="0">
 <segment>
-<pinref part="U$1" gate="G$4" pin="PD08"/>
+<pinref part="BRAIN" gate="G$4" pin="PD08"/>
 <wire x1="76.2" y1="22.86" x2="66.04" y2="22.86" width="0.1524" layer="91"/>
 <label x="63.5" y="22.86" size="1.778" layer="95"/>
 </segment>
@@ -12308,7 +12308,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_SCK" class="0">
 <segment>
-<pinref part="U$1" gate="G$4" pin="PD09"/>
+<pinref part="BRAIN" gate="G$4" pin="PD09"/>
 <wire x1="76.2" y1="20.32" x2="66.04" y2="20.32" width="0.1524" layer="91"/>
 <label x="63.5" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -12320,7 +12320,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_MISO" class="0">
 <segment>
-<pinref part="U$1" gate="G$4" pin="PD11"/>
+<pinref part="BRAIN" gate="G$4" pin="PD11"/>
 <wire x1="76.2" y1="15.24" x2="66.04" y2="15.24" width="0.1524" layer="91"/>
 <label x="63.5" y="15.24" size="1.778" layer="95"/>
 </segment>
@@ -12332,7 +12332,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="FLASH_S0" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC11"/>
+<pinref part="BRAIN" gate="G$3" pin="PC11"/>
 <wire x1="0" y1="7.62" x2="-12.7" y2="7.62" width="0.1524" layer="91"/>
 <label x="-15.24" y="7.62" size="1.778" layer="95"/>
 </segment>
@@ -12344,7 +12344,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="FLASH_S1" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC12"/>
+<pinref part="BRAIN" gate="G$3" pin="PC12"/>
 <wire x1="0" y1="5.08" x2="-12.7" y2="5.08" width="0.1524" layer="91"/>
 <label x="-15.24" y="5.08" size="1.778" layer="95"/>
 </segment>
@@ -12356,7 +12356,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="FLASH_S2" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC13"/>
+<pinref part="BRAIN" gate="G$3" pin="PC13"/>
 <wire x1="0" y1="2.54" x2="-12.7" y2="2.54" width="0.1524" layer="91"/>
 <label x="-15.24" y="2.54" size="1.778" layer="95"/>
 </segment>
@@ -12368,7 +12368,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="FLASH_S3" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC14"/>
+<pinref part="BRAIN" gate="G$3" pin="PC14"/>
 <wire x1="0" y1="0" x2="-12.7" y2="0" width="0.1524" layer="91"/>
 <label x="-15.24" y="0" size="1.778" layer="95"/>
 </segment>
@@ -12380,7 +12380,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G0" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB00"/>
+<pinref part="BRAIN" gate="G$2" pin="PB00"/>
 <wire x1="76.2" y1="86.36" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
 <label x="55.88" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -12392,7 +12392,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G1" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB01"/>
+<pinref part="BRAIN" gate="G$2" pin="PB01"/>
 <wire x1="76.2" y1="83.82" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
 <label x="55.88" y="83.82" size="1.778" layer="95"/>
 </segment>
@@ -12404,7 +12404,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G2" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB02"/>
+<pinref part="BRAIN" gate="G$2" pin="PB02"/>
 <wire x1="76.2" y1="81.28" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
 <label x="55.88" y="81.28" size="1.778" layer="95"/>
 </segment>
@@ -12416,7 +12416,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G3" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB03"/>
+<pinref part="BRAIN" gate="G$2" pin="PB03"/>
 <wire x1="76.2" y1="78.74" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
 <label x="55.88" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -12428,7 +12428,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G4" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB04"/>
+<pinref part="BRAIN" gate="G$2" pin="PB04"/>
 <wire x1="76.2" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
 <label x="55.88" y="76.2" size="1.778" layer="95"/>
 </segment>
@@ -12440,7 +12440,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G5" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB05"/>
+<pinref part="BRAIN" gate="G$2" pin="PB05"/>
 <wire x1="76.2" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
 <label x="55.88" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -12452,7 +12452,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G6" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB06"/>
+<pinref part="BRAIN" gate="G$2" pin="PB06"/>
 <wire x1="76.2" y1="71.12" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
 <label x="55.88" y="71.12" size="1.778" layer="95"/>
 </segment>
@@ -12464,7 +12464,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G7" class="0">
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB07"/>
+<pinref part="BRAIN" gate="G$2" pin="PB07"/>
 <wire x1="76.2" y1="68.58" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
 <label x="55.88" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -12476,7 +12476,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="D-" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA24"/>
+<pinref part="BRAIN" gate="G$1" pin="PA24"/>
 <wire x1="35.56" y1="63.5" x2="48.26" y2="63.5" width="0.1524" layer="91"/>
 <label x="45.72" y="63.5" size="1.778" layer="95"/>
 </segment>
@@ -12493,7 +12493,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="D+" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA25"/>
+<pinref part="BRAIN" gate="G$1" pin="PA25"/>
 <wire x1="35.56" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
 <label x="45.72" y="60.96" size="1.778" layer="95"/>
 </segment>
@@ -12510,14 +12510,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="USB_HOSTEN" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA27"/>
+<pinref part="BRAIN" gate="G$1" pin="PA27"/>
 <wire x1="35.56" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
 <label x="45.72" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWCLK" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA30"/>
+<pinref part="BRAIN" gate="G$1" pin="PA30"/>
 <wire x1="35.56" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 <label x="45.72" y="55.88" size="1.778" layer="95"/>
 </segment>
@@ -12529,7 +12529,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="SWDIO" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA31"/>
+<pinref part="BRAIN" gate="G$1" pin="PA31"/>
 <wire x1="35.56" y1="53.34" x2="48.26" y2="53.34" width="0.1524" layer="91"/>
 <label x="45.72" y="53.34" size="1.778" layer="95"/>
 </segment>
@@ -12561,7 +12561,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="119.38" y="-68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="1" pin="VSS"/>
+<pinref part="RTC" gate="1" pin="VSS"/>
 <wire x1="27.94" y1="-48.26" x2="17.78" y2="-48.26" width="0.1524" layer="91"/>
 <label x="17.78" y="-48.26" size="1.778" layer="95"/>
 </segment>
@@ -12572,40 +12572,40 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="-2.54" y="-55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$5" pin="GNDIO"/>
-<pinref part="U$1" gate="G$5" pin="GNDANA"/>
+<pinref part="BRAIN" gate="G$5" pin="GNDIO"/>
+<pinref part="BRAIN" gate="G$5" pin="GNDANA"/>
 <wire x1="180.34" y1="86.36" x2="180.34" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$5" pin="GNDANA1"/>
+<pinref part="BRAIN" gate="G$5" pin="GNDANA1"/>
 <wire x1="180.34" y1="81.28" x2="180.34" y2="78.74" width="0.1524" layer="91"/>
 <junction x="180.34" y="81.28"/>
-<pinref part="U$1" gate="G$5" pin="GND"/>
+<pinref part="BRAIN" gate="G$5" pin="GND"/>
 <wire x1="180.34" y1="78.74" x2="180.34" y2="71.12" width="0.1524" layer="91"/>
 <junction x="180.34" y="78.74"/>
-<pinref part="U$1" gate="G$5" pin="GND1"/>
+<pinref part="BRAIN" gate="G$5" pin="GND1"/>
 <wire x1="180.34" y1="71.12" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
 <junction x="180.34" y="71.12"/>
-<pinref part="U$1" gate="G$5" pin="GND2"/>
+<pinref part="BRAIN" gate="G$5" pin="GND2"/>
 <wire x1="180.34" y1="68.58" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
 <junction x="180.34" y="68.58"/>
-<pinref part="U$1" gate="G$5" pin="GND3"/>
+<pinref part="BRAIN" gate="G$5" pin="GND3"/>
 <wire x1="180.34" y1="66.04" x2="180.34" y2="63.5" width="0.1524" layer="91"/>
 <junction x="180.34" y="66.04"/>
-<pinref part="U$1" gate="G$5" pin="GND4"/>
+<pinref part="BRAIN" gate="G$5" pin="GND4"/>
 <wire x1="180.34" y1="63.5" x2="180.34" y2="60.96" width="0.1524" layer="91"/>
 <junction x="180.34" y="63.5"/>
-<pinref part="U$1" gate="G$5" pin="GND5"/>
+<pinref part="BRAIN" gate="G$5" pin="GND5"/>
 <wire x1="180.34" y1="60.96" x2="180.34" y2="58.42" width="0.1524" layer="91"/>
 <junction x="180.34" y="60.96"/>
-<pinref part="U$1" gate="G$5" pin="GND6"/>
+<pinref part="BRAIN" gate="G$5" pin="GND6"/>
 <wire x1="180.34" y1="58.42" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
 <junction x="180.34" y="58.42"/>
-<pinref part="U$1" gate="G$5" pin="GND7"/>
+<pinref part="BRAIN" gate="G$5" pin="GND7"/>
 <wire x1="180.34" y1="55.88" x2="180.34" y2="53.34" width="0.1524" layer="91"/>
 <junction x="180.34" y="55.88"/>
-<pinref part="U$1" gate="G$5" pin="GND8"/>
+<pinref part="BRAIN" gate="G$5" pin="GND8"/>
 <wire x1="180.34" y1="53.34" x2="180.34" y2="50.8" width="0.1524" layer="91"/>
 <junction x="180.34" y="53.34"/>
-<pinref part="U$1" gate="G$5" pin="GND9"/>
+<pinref part="BRAIN" gate="G$5" pin="GND9"/>
 <wire x1="180.34" y1="50.8" x2="180.34" y2="48.26" width="0.1524" layer="91"/>
 <junction x="180.34" y="50.8"/>
 <wire x1="180.34" y1="48.26" x2="180.34" y2="20.32" width="0.1524" layer="91"/>
@@ -12614,7 +12614,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="185.42" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="VSS"/>
+<pinref part="FLASH" gate="G$1" pin="VSS"/>
 <wire x1="167.64" y1="-104.14" x2="185.42" y2="-104.14" width="0.1524" layer="91"/>
 <label x="182.88" y="-104.14" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12736,7 +12736,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="119.38" y="-66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="1" pin="VDD"/>
+<pinref part="RTC" gate="1" pin="VDD"/>
 <wire x1="63.5" y1="-38.1" x2="78.74" y2="-38.1" width="0.1524" layer="91"/>
 <label x="73.66" y="-38.1" size="1.778" layer="95"/>
 </segment>
@@ -12746,46 +12746,46 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="-12.7" y="-33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$5" pin="VDDANA"/>
-<pinref part="U$1" gate="G$5" pin="VDDANA1"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDANA"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDANA1"/>
 <wire x1="139.7" y1="81.28" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$5" pin="VDDANA2"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDANA2"/>
 <wire x1="139.7" y1="78.74" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
 <junction x="139.7" y="78.74"/>
-<pinref part="U$1" gate="G$5" pin="VDDCORE"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDCORE"/>
 <wire x1="139.7" y1="76.2" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
 <junction x="139.7" y="76.2"/>
-<pinref part="U$1" gate="G$5" pin="VSW"/>
+<pinref part="BRAIN" gate="G$5" pin="VSW"/>
 <wire x1="139.7" y1="68.58" x2="139.7" y2="60.96" width="0.1524" layer="91"/>
 <junction x="139.7" y="68.58"/>
-<pinref part="U$1" gate="G$5" pin="VDDIOB"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDIOB"/>
 <wire x1="139.7" y1="60.96" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
 <junction x="139.7" y="60.96"/>
-<pinref part="U$1" gate="G$5" pin="VDDIOB1"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDIOB1"/>
 <wire x1="139.7" y1="55.88" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
 <junction x="139.7" y="55.88"/>
-<pinref part="U$1" gate="G$5" pin="VDDIO"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDIO"/>
 <wire x1="139.7" y1="53.34" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
 <junction x="139.7" y="53.34"/>
-<pinref part="U$1" gate="G$5" pin="VDDIO1"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDIO1"/>
 <wire x1="139.7" y1="48.26" x2="139.7" y2="45.72" width="0.1524" layer="91"/>
 <junction x="139.7" y="48.26"/>
-<pinref part="U$1" gate="G$5" pin="VDDIO2"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDIO2"/>
 <wire x1="139.7" y1="45.72" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
 <junction x="139.7" y="45.72"/>
-<pinref part="U$1" gate="G$5" pin="VDDIO3"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDIO3"/>
 <wire x1="139.7" y1="43.18" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
 <junction x="139.7" y="43.18"/>
-<pinref part="U$1" gate="G$5" pin="VDDIO4"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDIO4"/>
 <wire x1="139.7" y1="40.64" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
 <junction x="139.7" y="40.64"/>
-<pinref part="U$1" gate="G$5" pin="VDDIO5"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDIO5"/>
 <wire x1="139.7" y1="38.1" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
 <junction x="139.7" y="38.1"/>
-<pinref part="U$1" gate="G$5" pin="VDDIO6"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDIO6"/>
 <wire x1="139.7" y1="35.56" x2="139.7" y2="33.02" width="0.1524" layer="91"/>
 <junction x="139.7" y="35.56"/>
-<pinref part="U$1" gate="G$5" pin="VDDIO7"/>
+<pinref part="BRAIN" gate="G$5" pin="VDDIO7"/>
 <wire x1="139.7" y1="33.02" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
 <junction x="139.7" y="33.02"/>
 <wire x1="139.7" y1="30.48" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
@@ -12794,7 +12794,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="124.46" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="VCC"/>
+<pinref part="FLASH" gate="G$1" pin="VCC"/>
 <wire x1="167.64" y1="-91.44" x2="185.42" y2="-91.44" width="0.1524" layer="91"/>
 <label x="182.88" y="-91.44" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -12885,7 +12885,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="U$7" gate="1" pin="+"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="7.62" y1="-45.72" x2="7.62" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="1" pin="VBAT"/>
+<pinref part="RTC" gate="1" pin="VBAT"/>
 <wire x1="7.62" y1="-43.18" x2="7.62" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-43.18" x2="7.62" y2="-43.18" width="0.1524" layer="91"/>
 <junction x="7.62" y="-43.18"/>
@@ -12915,7 +12915,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G8" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC24"/>
+<pinref part="BRAIN" gate="G$3" pin="PC24"/>
 <wire x1="35.56" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
 <label x="40.64" y="12.7" size="1.778" layer="95"/>
 </segment>
@@ -12927,7 +12927,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G9" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC25"/>
+<pinref part="BRAIN" gate="G$3" pin="PC25"/>
 <wire x1="35.56" y1="10.16" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
 <label x="40.64" y="10.16" size="1.778" layer="95"/>
 </segment>
@@ -12939,7 +12939,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G10" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC26"/>
+<pinref part="BRAIN" gate="G$3" pin="PC26"/>
 <wire x1="35.56" y1="7.62" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
 <label x="40.64" y="7.62" size="1.778" layer="95"/>
 </segment>
@@ -12951,7 +12951,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G11" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC27"/>
+<pinref part="BRAIN" gate="G$3" pin="PC27"/>
 <wire x1="35.56" y1="5.08" x2="48.26" y2="5.08" width="0.1524" layer="91"/>
 <label x="40.64" y="5.08" size="1.778" layer="95"/>
 </segment>
@@ -12963,7 +12963,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G12" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC28"/>
+<pinref part="BRAIN" gate="G$3" pin="PC28"/>
 <wire x1="35.56" y1="2.54" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
 <label x="40.64" y="2.54" size="1.778" layer="95"/>
 </segment>
@@ -12975,7 +12975,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G13" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC30"/>
+<pinref part="BRAIN" gate="G$3" pin="PC30"/>
 <wire x1="35.56" y1="0" x2="48.26" y2="0" width="0.1524" layer="91"/>
 <label x="40.64" y="0" size="1.778" layer="95"/>
 </segment>
@@ -12987,7 +12987,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="MOD_G14" class="0">
 <segment>
-<pinref part="U$1" gate="G$3" pin="PC31"/>
+<pinref part="BRAIN" gate="G$3" pin="PC31"/>
 <wire x1="35.56" y1="-2.54" x2="48.26" y2="-2.54" width="0.1524" layer="91"/>
 <label x="40.64" y="-2.54" size="1.778" layer="95"/>
 </segment>
@@ -13039,14 +13039,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="279.4" y="71.12" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$2" pin="PB26"/>
+<pinref part="BRAIN" gate="G$2" pin="PB26"/>
 <wire x1="111.76" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
 <label x="129.54" y="58.42" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="BUT1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA21"/>
+<pinref part="BRAIN" gate="G$1" pin="PA21"/>
 <wire x1="35.56" y1="73.66" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
 <label x="38.1" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -13058,7 +13058,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="BUT2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA22"/>
+<pinref part="BRAIN" gate="G$1" pin="PA22"/>
 <wire x1="35.56" y1="71.12" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
 <label x="38.1" y="71.12" size="1.778" layer="95"/>
 </segment>
@@ -13070,7 +13070,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="BUT3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA23"/>
+<pinref part="BRAIN" gate="G$1" pin="PA23"/>
 <wire x1="35.56" y1="68.58" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
 <label x="38.1" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -13082,7 +13082,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$2" gate="1" pin="OSCI"/>
+<pinref part="RTC" gate="1" pin="OSCI"/>
 <pinref part="U$14" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="-38.1" x2="22.86" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="-38.1" x2="22.86" y2="-30.48" width="0.1524" layer="91"/>
@@ -13090,7 +13090,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$2" gate="1" pin="OSCO"/>
+<pinref part="RTC" gate="1" pin="OSCO"/>
 <pinref part="U$14" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="-40.64" x2="17.78" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="-40.64" x2="17.78" y2="-30.48" width="0.1524" layer="91"/>
@@ -13098,7 +13098,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="U$1" gate="G$5" pin="!RESET"/>
+<pinref part="BRAIN" gate="G$5" pin="!RESET"/>
 <wire x1="139.7" y1="86.36" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
 <label x="129.54" y="86.36" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="1"/>
