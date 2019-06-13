@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="PWR" color="16" fill="3" visible="yes" active="yes"/>
@@ -2189,6 +2189,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="57.4668" y="25.15" size="1.016" layer="25" rot="R180"/>
 <attribute name="SPICEPREFIX" value="C" x="55.6" y="25.8" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
+<element name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="" x="73.4824" y="13.8908" smashed="yes" rot="R180">
+<attribute name="NAME" x="74.1174" y="13.2558" size="1.27" layer="25" rot="R180"/>
+<attribute name="SPICEPREFIX" value="R" x="73.4824" y="13.8908" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="74.1174" y="15.7958" size="1.27" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="CLOCK">
@@ -2330,10 +2335,14 @@ design rules under a new name.</description>
 <wire x1="74.08" y1="24.35" x2="74.0928" y2="24.3628" width="0.1524" layer="1"/>
 <wire x1="79.9092875" y1="24.3628" x2="81.2882" y2="22.9838875" width="0.2032" layer="1"/>
 <wire x1="81.2882" y1="14.1519125" x2="80.9924875" y2="13.8562" width="0.2032" layer="1"/>
-<wire x1="80.9924875" y1="13.8562" x2="76.8686" y2="13.8562" width="0.2032" layer="1"/>
+<wire x1="80.9924875" y1="13.8562" x2="77" y2="13.8562" width="0.2032" layer="1"/>
+<wire x1="77" y1="13.8562" x2="76.8686" y2="13.8562" width="0.2032" layer="1"/>
 <wire x1="81.2882" y1="22.9838875" x2="81.2882" y2="14.1519125" width="0.2032" layer="1"/>
 <wire x1="76.8686" y1="13.8562" x2="76.6654" y2="14.0594" width="0.2032" layer="1"/>
 <wire x1="76.6654" y1="14.0594" x2="76.6654" y2="15.291" width="0.2032" layer="1"/>
+<contactref element="R5" pad="1"/>
+<wire x1="74.3324" y1="13.8908" x2="74.367" y2="13.8562" width="0.1524" layer="1"/>
+<wire x1="77" y1="13.8562" x2="74.367" y2="13.8562" width="0.2" layer="1"/>
 </signal>
 <signal name="FLASH_MOSI">
 <contactref element="BRAIN" pad="41"/>
@@ -3074,6 +3083,9 @@ design rules under a new name.</description>
 <wire x1="53.8" y1="26.2" x2="54" y2="26" width="0.2032" layer="2"/>
 <wire x1="53.5" y1="26.2" x2="53.502" y2="26.202" width="0.2032" layer="1"/>
 <wire x1="53.502" y1="27.1682" x2="53.502" y2="26.202" width="0.2032" layer="1"/>
+<contactref element="R5" pad="2"/>
+<wire x1="72.6324" y1="13.8908" x2="72.6324" y2="17.6196" width="0.2" layer="1"/>
+<wire x1="72.6324" y1="17.6196" x2="72.617" y2="17.635" width="0.2" layer="1"/>
 <wire x1="70.28" y1="18.85" x2="70.28" y2="20.15" width="0" layer="19" extent="1-1"/>
 <wire x1="65.88" y1="20.15" x2="65.88" y2="18.8504" width="0" layer="19" extent="1-1"/>
 <wire x1="62.28" y1="20.15" x2="62.289" y2="18.8346" width="0" layer="19" extent="1-1"/>

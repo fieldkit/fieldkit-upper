@@ -11798,6 +11798,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value=".1u"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="4.7u"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 </parts>
 <sheets>
 <sheet>
@@ -11976,6 +11977,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="NAME" x="141.478" y="66.421" size="1.778" layer="95"/>
 <attribute name="VALUE" x="145.796" y="61.849" size="1.778" layer="96"/>
 </instance>
+<instance part="R5" gate="G$1" x="124.46" y="-114.3" smashed="yes">
+<attribute name="NAME" x="120.65" y="-112.8014" size="1.778" layer="95"/>
+<attribute name="VALUE" x="120.65" y="-117.602" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12108,8 +12113,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="FLASH" gate="G$1" pin="SSEL"/>
-<wire x1="137.16" y1="-99.06" x2="119.38" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-99.06" x2="114.3" y2="-99.06" width="0.1524" layer="91"/>
 <label x="121.92" y="-99.06" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="-99.06" x2="114.3" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-114.3" x2="119.38" y2="-114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FLASH_MOSI" class="0">
@@ -12940,6 +12948,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <junction x="152.4" y="76.2"/>
 <junction x="147.32" y="76.2"/>
 <wire x1="147.32" y1="76.2" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="-114.3" x2="137.16" y2="-114.3" width="0.1524" layer="91"/>
+<label x="132.08" y="-114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
