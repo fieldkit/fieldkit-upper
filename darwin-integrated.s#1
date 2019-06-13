@@ -8592,6 +8592,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="2.9464" y1="25.4" x2="33.02" y2="25.4" width="0.127" layer="48"/>
 <wire x1="33.02" y1="25.4" x2="33.02" y2="10.16" width="0.127" layer="48"/>
 <wire x1="33.02" y1="10.16" x2="2.54" y2="10.16" width="0.127" layer="48"/>
+<pad name="P0" x="13.97" y="1.27" drill="0.889" diameter="1.905" shape="octagon"/>
+<pad name="P1" x="16.51" y="1.27" drill="0.889" diameter="1.905" shape="octagon"/>
+<pad name="P2" x="19.05" y="1.27" drill="0.889" diameter="1.905" shape="octagon"/>
+<pad name="P3" x="21.59" y="1.27" drill="0.889" diameter="1.905" shape="octagon"/>
 </package>
 <package name="20PH">
 <smd name="PIN1" x="-0.34" y="0" dx="1.27" dy="3" layer="1" rot="R90"/>
@@ -8755,10 +8759,29 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-17.78" y1="-20.32" x2="-17.78" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 <symbol name="SCREEN">
-<wire x1="-10.16" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
-<wire x1="10.16" y1="2.54" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="-0.762" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-8.128" y1="0.762" x2="-8.128" y2="7.366" width="0.254" layer="94"/>
+<wire x1="-8.128" y1="7.366" x2="-6.858" y2="8.636" width="0.254" layer="94" curve="-90"/>
+<wire x1="-6.858" y1="8.636" x2="4.318" y2="8.636" width="0.254" layer="94"/>
+<wire x1="4.318" y1="8.636" x2="5.588" y2="7.366" width="0.254" layer="94" curve="-90"/>
+<wire x1="5.588" y1="7.366" x2="5.588" y2="0.762" width="0.254" layer="94"/>
+<wire x1="5.588" y1="0.762" x2="4.318" y2="-0.508" width="0.254" layer="94" curve="-90"/>
+<wire x1="4.318" y1="-0.508" x2="-6.858" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-6.858" y1="-0.508" x2="-8.128" y2="0.762" width="0.254" layer="94" curve="-90"/>
+<circle x="7.874" y="6.35" radius="1.27" width="0.254" layer="94"/>
+<circle x="7.874" y="2.286" radius="1.27" width="0.254" layer="94"/>
+<wire x1="7.874" y1="8.128" x2="7.874" y2="4.572" width="0.254" layer="94"/>
+<wire x1="7.874" y1="3.81" x2="7.874" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="10.16" x2="2.032" y2="15.494" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="10.16" x2="-1.778" y2="14.478" width="0.254" layer="94"/>
+<pin name="VCC" x="-5.08" y="-7.62" length="middle" rot="R90"/>
+<pin name="GND" x="-2.54" y="-7.62" length="middle" rot="R90"/>
+<pin name="SCL" x="0" y="-7.62" length="middle" rot="R90"/>
+<pin name="SDA" x="2.54" y="-7.62" length="middle" rot="R90"/>
 </symbol>
 <symbol name="20PH">
 <pin name="PIN1" x="-15.24" y="12.7" length="middle"/>
@@ -8953,6 +8976,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </gates>
 <devices>
 <device name="" package="SCREEN">
+<connects>
+<connect gate="G$1" pin="GND" pad="P1"/>
+<connect gate="G$1" pin="SCL" pad="P2"/>
+<connect gate="G$1" pin="SDA" pad="P3"/>
+<connect gate="G$1" pin="VCC" pad="P0"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -12223,6 +12252,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="154.94" y1="17.78" x2="144.78" y2="17.78" width="0.1524" layer="91"/>
 <label x="142.24" y="17.78" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="SDA"/>
+<wire x1="251.46" y1="-121.92" x2="251.46" y2="-132.08" width="0.1524" layer="91"/>
+<label x="251.46" y="-129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="CORE_SCL" class="0">
 <segment>
@@ -12244,6 +12278,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="10.16" x2="144.78" y2="10.16" width="0.1524" layer="91"/>
 <label x="142.24" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="SCL"/>
+<wire x1="248.92" y1="-121.92" x2="248.92" y2="-132.08" width="0.1524" layer="91"/>
+<label x="248.92" y="-129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GPS_TX" class="0">
@@ -12713,6 +12752,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="261.62" y1="58.42" x2="281.94" y2="58.42" width="0.1524" layer="91"/>
 <label x="279.4" y="58.42" size="1.778" layer="95" align="bottom-right"/>
 </segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="GND"/>
+<wire x1="246.38" y1="-121.92" x2="246.38" y2="-132.08" width="0.1524" layer="91"/>
+<label x="246.38" y="-129.54" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="3V3" class="0">
 <segment>
@@ -12878,6 +12922,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="UPPER" gate="G$1" pin="PIN12"/>
 <wire x1="261.62" y1="60.96" x2="281.94" y2="60.96" width="0.1524" layer="91"/>
 <label x="279.4" y="60.96" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="VCC"/>
+<wire x1="243.84" y1="-121.92" x2="243.84" y2="-132.08" width="0.1524" layer="91"/>
+<label x="243.84" y="-129.54" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$1" class="0">
