@@ -8523,14 +8523,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="3" y1="-4" x2="2.5" y2="-4" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-4" x2="-3" y2="-4" width="0.127" layer="21"/>
 <wire x1="-3" y1="-4" x2="-3" y2="4" width="0.127" layer="21"/>
-<smd name="P$1" x="1.905" y="-4.06" dx="0.5" dy="1.2" layer="1"/>
-<smd name="P$2" x="0.635" y="-4.06" dx="0.5" dy="1.2" layer="1"/>
-<smd name="P$3" x="-0.635" y="-4.06" dx="0.5" dy="1.2" layer="1"/>
-<smd name="P$4" x="-1.905" y="-4.06" dx="0.5" dy="1.2" layer="1"/>
-<smd name="P$5" x="-1.905" y="4.06" dx="0.5" dy="1.2" layer="1"/>
-<smd name="P$6" x="-0.635" y="4.06" dx="0.5" dy="1.2" layer="1"/>
-<smd name="P$7" x="0.635" y="4.06" dx="0.5" dy="1.2" layer="1"/>
-<smd name="P$8" x="1.905" y="4.06" dx="0.5" dy="1.2" layer="1"/>
+<smd name="P$4" x="1.905" y="-4.06" dx="0.5" dy="1.2" layer="1"/>
+<smd name="P$3" x="0.635" y="-4.06" dx="0.5" dy="1.2" layer="1"/>
+<smd name="P$2" x="-0.635" y="-4.06" dx="0.5" dy="1.2" layer="1"/>
+<smd name="P$1" x="-1.905" y="-4.06" dx="0.5" dy="1.2" layer="1"/>
+<smd name="P$8" x="-1.905" y="4.06" dx="0.5" dy="1.2" layer="1"/>
+<smd name="P$7" x="-0.635" y="4.06" dx="0.5" dy="1.2" layer="1"/>
+<smd name="P$6" x="0.635" y="4.06" dx="0.5" dy="1.2" layer="1"/>
+<smd name="P$5" x="1.905" y="4.06" dx="0.5" dy="1.2" layer="1"/>
 <smd name="PAD" x="0" y="0" dx="4.3" dy="3.4" layer="1" cream="no"/>
 <rectangle x1="-2" y1="0.25" x2="-1" y2="1.25" layer="31"/>
 <rectangle x1="-1" y1="-1.25" x2="0" y2="-0.25" layer="31"/>

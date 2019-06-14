@@ -6,15 +6,15 @@
     "description": {
         "EN": "EAGLE default 4 layer CAM job."
     },
-    "output_type": "directory",
+    "output_type": "zip",
     "outputs": [
         {
-            "filename_prefix": "CAMOutputs/GerberFiles",
+            "filename_prefix": "",
             "format_specifier": {
                 "decimal": 4,
                 "integer": 3
             },
-            "generate_job_file": true,
+            "generate_job_file": false,
             "output_type": "gerber",
             "outputs": [
                 {
@@ -277,7 +277,7 @@
             "version": "RS274X"
         },
         {
-            "filename_prefix": "CAMOutputs/DrillFiles",
+            "filename_prefix": "",
             "format_specifier": {
                 "decimal": 3,
                 "integer": 3
@@ -299,17 +299,9 @@
             ]
         },
         {
-            "filename_prefix": "CAMOutputs/Assembly",
+            "filename_prefix": "",
             "output_type": "assembly",
             "outputs": [
-                {
-                    "filename_format": "%ASSEMBLYPREFIX/%N",
-                    "list_attribute": true,
-                    "list_type": "values",
-                    "name": "Bill of Material",
-                    "output_format": "txt",
-                    "type": "bom"
-                }
             ]
         },
         {
