@@ -8487,9 +8487,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Conservify">
+<library name="Conservify" urn="urn:adsk.eagle:library:11839183">
 <packages>
-<package name="SOP50P490X110-10" urn="urn:adsk.eagle:footprint:10002763/1">
+<package name="SOP50P490X110-10" urn="urn:adsk.eagle:footprint:10002763/1" library_version="16">
 <description>10-SOP, 0.50 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
 &lt;p&gt;10-pin SOP package with 0.50 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
 <circle x="-2.2073" y="1.6525" radius="0.25" width="0" layer="21"/>
@@ -8516,7 +8516,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <text x="0" y="2.5375" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.185" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="WSON8">
+<package name="WSON8" urn="urn:adsk.eagle:footprint:11839212/1" library_version="14" library_locally_modified="yes">
 <wire x1="-3" y1="4" x2="-2.5" y2="4" width="0.127" layer="21"/>
 <wire x1="2.5" y1="4" x2="3" y2="4" width="0.127" layer="21"/>
 <wire x1="3" y1="4" x2="3" y2="-4" width="0.127" layer="21"/>
@@ -8537,11 +8537,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <rectangle x1="0" y1="0.25" x2="1" y2="1.25" layer="31"/>
 <rectangle x1="1" y1="-1.25" x2="2" y2="-0.25" layer="31"/>
 </package>
-<package name="SUPERCAP">
+<package name="SUPERCAP" urn="urn:adsk.eagle:footprint:11839184/1" library_version="14" library_locally_modified="yes">
 <smd name="+" x="0" y="5.15" dx="5" dy="2" layer="1"/>
 <smd name="-" x="0" y="-5" dx="4" dy="1.7" layer="1"/>
 </package>
-<package name="MOELX-47491-0001">
+<package name="MOELX-47491-0001" urn="urn:adsk.eagle:footprint:11839185/1" library_version="14" library_locally_modified="yes">
 <smd name="VCC" x="0.875" y="1.3" dx="1.25" dy="0.4" layer="1" roundness="50"/>
 <smd name="D-" x="0.875" y="0.65" dx="1.25" dy="0.4" layer="1" roundness="50"/>
 <smd name="D+" x="0.875" y="0" dx="1.25" dy="0.4" layer="1" roundness="50"/>
@@ -8561,7 +8561,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-5.6" y1="3.9" x2="-5.6" y2="6" width="0.127" layer="51"/>
 <wire x1="-5.6" y1="-3.9" x2="-5.6" y2="-6" width="0.127" layer="51"/>
 </package>
-<package name="DM3D-SF">
+<package name="DM3D-SF" urn="urn:adsk.eagle:footprint:11839187/1" library_version="14" library_locally_modified="yes">
 <smd name="DAT1" x="0" y="-0.875" dx="0.55" dy="1.75" layer="1" rot="R180"/>
 <smd name="DAT0" x="1.1" y="-0.875" dx="0.55" dy="1.75" layer="1" rot="R180"/>
 <smd name="VSS" x="2.2" y="-0.875" dx="0.55" dy="1.75" layer="1" rot="R180"/>
@@ -8577,7 +8577,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <smd name="PAD6" x="-1.45" y="6.85" dx="0.8" dy="1.4" layer="1"/>
 <smd name="PAD5" x="-1.2" y="9.925" dx="1.3" dy="1" layer="1"/>
 </package>
-<package name="SCREEN">
+<package name="SCREEN" urn="urn:adsk.eagle:footprint:11839213/1" library_version="14" library_locally_modified="yes">
 <wire x1="0" y1="27.432" x2="0" y2="33.6042" width="0.127" layer="48"/>
 <wire x1="0" y1="33.6042" x2="35.56" y2="33.6042" width="0.127" layer="48"/>
 <wire x1="35.56" y1="33.6042" x2="35.56" y2="27.432" width="0.127" layer="48"/>
@@ -8597,7 +8597,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pad name="P2" x="19.05" y="1.27" drill="0.889" diameter="1.905" shape="octagon"/>
 <pad name="P3" x="21.59" y="1.27" drill="0.889" diameter="1.905" shape="octagon"/>
 </package>
-<package name="20PH">
+<package name="20PH" urn="urn:adsk.eagle:footprint:11839214/1" library_version="14" library_locally_modified="yes">
 <smd name="PIN1" x="-0.34" y="0" dx="1.27" dy="3" layer="1" rot="R90"/>
 <smd name="PIN2" x="-0.34" y="-2.54" dx="1.27" dy="3" layer="1" rot="R90"/>
 <smd name="PIN3" x="0" y="-5.08" dx="1.27" dy="3.68" layer="1" rot="R90"/>
@@ -8621,7 +8621,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <hole x="2.2" y="-1.27" drill="1.58"/>
 <hole x="2.2" y="-21.59" drill="1.58"/>
 </package>
-<package name="EVP-AEJB2A">
+<package name="EVP-AEJB2A" urn="urn:adsk.eagle:footprint:11839215/1" library_version="14" library_locally_modified="yes">
 <smd name="PAD1" x="2.5" y="0.675" dx="0.65" dy="0.65" layer="1"/>
 <smd name="PAD" x="-2.5" y="0.675" dx="0.65" dy="0.65" layer="1"/>
 <smd name="B" x="0" y="2.375" dx="0.8" dy="1.25" layer="1"/>
@@ -8633,13 +8633,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="1.9" y1="1.35" x2="1.9" y2="0" width="0.0762" layer="49"/>
 <wire x1="1.9" y1="0" x2="3" y2="0" width="0.0762" layer="49"/>
 </package>
-<package name="ABS07W">
+<package name="ABS07W" urn="urn:adsk.eagle:footprint:11839216/1" library_version="14" library_locally_modified="yes">
 <smd name="P$1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
 <smd name="P$2" x="1.25" y="0" dx="1" dy="1.8" layer="1"/>
 <wire x1="-0.5" y1="0.9" x2="0.5" y2="0.9" width="0.127" layer="21"/>
 <wire x1="-0.5" y1="-0.9" x2="0.5" y2="-0.9" width="0.127" layer="21"/>
 </package>
-<package name="SO8" urn="urn:adsk.eagle:footprint:11214707/1" locally_modified="yes">
+<package name="SO8" urn="urn:adsk.eagle:footprint:11214707/2" library_version="14" library_locally_modified="yes">
 <description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.90 X 3.90 X 1.75 mm body
 &lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.90 X 3.90 X 1.75 mm&lt;/p&gt;</description>
 <circle x="-2.7288" y="2.7047" radius="0.25" width="0" layer="21"/>
@@ -8664,25 +8664,94 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <text x="0" y="3.5897" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.135" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="20PH-F" urn="urn:adsk.eagle:footprint:11853534/1" library_version="14" library_locally_modified="yes">
+<smd name="PIN1" x="-0.34" y="0" dx="1.27" dy="3" layer="1" rot="R90"/>
+<smd name="PIN2" x="-0.34" y="-2.54" dx="1.27" dy="3" layer="1" rot="R90"/>
+<smd name="PIN3" x="0" y="-5.08" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN4" x="0" y="-7.62" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN5" x="0" y="-10.16" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN6" x="0" y="-12.7" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN7" x="0" y="-15.24" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN8" x="0" y="-17.78" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN9" x="-0.34" y="-20.32" dx="1.27" dy="3" layer="1" rot="R90"/>
+<smd name="PIN10" x="-0.34" y="-22.86" dx="1.27" dy="3" layer="1" rot="R90"/>
+<smd name="PIN11" x="4.74" y="-22.86" dx="1.27" dy="3" layer="1" rot="R90"/>
+<smd name="PIN12" x="4.74" y="-20.32" dx="1.27" dy="3" layer="1" rot="R90"/>
+<smd name="PIN13" x="4.4" y="-17.78" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN14" x="4.4" y="-15.24" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN15" x="4.4" y="-12.7" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN16" x="4.4" y="-10.16" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN17" x="4.4" y="-7.62" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN18" x="4.4" y="-5.08" dx="1.27" dy="3.68" layer="1" rot="R90"/>
+<smd name="PIN19" x="4.74" y="-2.54" dx="1.27" dy="3" layer="1" rot="R90"/>
+<smd name="PIN20" x="4.74" y="0" dx="1.27" dy="3" layer="1" rot="R90"/>
+<hole x="2.2" y="-1.27" drill="1.58"/>
+<hole x="2.2" y="-21.59" drill="1.58"/>
+</package>
 </packages>
 <packages3d>
-<package3d name="SOP50P490X110-10" urn="urn:adsk.eagle:package:10002685/1" type="model">
+<package3d name="SOP50P490X110-10" urn="urn:adsk.eagle:package:10002685/1" type="model" library_version="16">
 <description>10-SOP, 0.50 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
 &lt;p&gt;10-pin SOP package with 0.50 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOP50P490X110-10"/>
 </packageinstances>
 </package3d>
-<package3d name="SOIC127P600X175-8" urn="urn:adsk.eagle:package:11214694/1" type="model">
+<package3d name="SOIC127P600X175-8" urn="urn:adsk.eagle:package:11214694/2" type="model" library_version="14" library_locally_modified="yes">
 <description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.90 X 3.90 X 1.75 mm body
 &lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.90 X 3.90 X 1.75 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SO8"/>
 </packageinstances>
 </package3d>
+<package3d name="WSON8" urn="urn:adsk.eagle:package:11839247/1" type="box" library_version="14" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="WSON8"/>
+</packageinstances>
+</package3d>
+<package3d name="SUPERCAP" urn="urn:adsk.eagle:package:11839248/2" type="model" library_version="14" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="SUPERCAP"/>
+</packageinstances>
+</package3d>
+<package3d name="MOELX-47491-0001" urn="urn:adsk.eagle:package:11839249/2" type="model" library_version="14" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="MOELX-47491-0001"/>
+</packageinstances>
+</package3d>
+<package3d name="DM3D-SF" urn="urn:adsk.eagle:package:11839251/1" type="box" library_version="14" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="DM3D-SF"/>
+</packageinstances>
+</package3d>
+<package3d name="SCREEN" urn="urn:adsk.eagle:package:11839246/5" type="model" library_version="16">
+<packageinstances>
+<packageinstance name="SCREEN"/>
+</packageinstances>
+</package3d>
+<package3d name="20PH" urn="urn:adsk.eagle:package:11839245/2" type="model" library_version="14" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="20PH"/>
+</packageinstances>
+</package3d>
+<package3d name="20PH-F" urn="urn:adsk.eagle:package:11853535/2" type="model" library_version="14" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="20PH-F"/>
+</packageinstances>
+</package3d>
+<package3d name="EVP-AEJB2A" urn="urn:adsk.eagle:package:11839244/1" type="box" library_version="14" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="EVP-AEJB2A"/>
+</packageinstances>
+</package3d>
+<package3d name="ABS07W" urn="urn:adsk.eagle:package:11839243/1" type="box" library_version="14" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="ABS07W"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
-<symbol name="RTC">
+<symbol name="RTC" urn="urn:adsk.eagle:symbol:11839208/1" library_version="14" library_locally_modified="yes">
 <pin name="OSCI" x="-17.78" y="7.62" length="middle"/>
 <pin name="OSCO" x="-17.78" y="5.08" length="middle"/>
 <pin name="VBAT" x="-17.78" y="2.54" length="middle"/>
@@ -8691,14 +8760,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="SCL" x="17.78" y="0" length="middle" rot="R180"/>
 <pin name="!INTA(CLK)" x="17.78" y="5.08" length="middle" rot="R180"/>
 <pin name="VDD" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="TS(CLK/INTB)" x="-17.78" y="0" length="middle"/>
+<pin name="CLK" x="17.78" y="2.54" length="middle" rot="R180"/>
 <wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="10.16" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-5.08" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<pin name="TS(CLK/INTB)" x="-17.78" y="0" length="middle"/>
-<pin name="CLK" x="17.78" y="2.54" length="middle" rot="R180"/>
 </symbol>
-<symbol name="TC58CVG1S3HRAIG">
+<symbol name="TC58CVG1S3HRAIG" urn="urn:adsk.eagle:symbol:11839206/1" library_version="14" library_locally_modified="yes">
 <pin name="!CS" x="17.78" y="2.54" length="middle" rot="R180"/>
 <pin name="SO/SO1" x="17.78" y="-5.08" length="middle" rot="R180"/>
 <pin name="!WP!/SO2" x="-17.78" y="-5.08" length="middle"/>
@@ -8712,7 +8781,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-10.16" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
 </symbol>
-<symbol name="C-US">
+<symbol name="C-US" urn="urn:adsk.eagle:symbol:11839207/1" library_version="14" library_locally_modified="yes">
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
@@ -8722,23 +8791,23 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
-<symbol name="USB">
+<symbol name="USB" urn="urn:adsk.eagle:symbol:11839209/1" library_version="14" library_locally_modified="yes">
 <pin name="VBUS" x="12.7" y="5.08" length="middle" rot="R180"/>
 <pin name="GND" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="D+" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="D-" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<wire x1="7.62" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="10.16" width="0.254" layer="94"/>
 <pin name="PAD6" x="-15.24" y="-5.08" length="middle"/>
 <pin name="PAD5" x="-15.24" y="-2.54" length="middle"/>
 <pin name="PAD4" x="-15.24" y="0" length="middle"/>
 <pin name="PAD3" x="-15.24" y="2.54" length="middle"/>
 <pin name="PAD2" x="-15.24" y="5.08" length="middle"/>
 <pin name="PAD1" x="-15.24" y="7.62" length="middle"/>
+<wire x1="7.62" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="10.16" width="0.254" layer="94"/>
 </symbol>
-<symbol name="SDCARD">
+<symbol name="SDCARD" urn="urn:adsk.eagle:symbol:11839211/1" library_version="14" library_locally_modified="yes">
 <pin name="DAT0" x="5.08" y="0" length="middle" rot="R180"/>
 <pin name="DAT1" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="DAT2" x="5.08" y="-5.08" length="middle" rot="R180"/>
@@ -8758,7 +8827,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="0" y1="-20.32" x2="-17.78" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="-20.32" x2="-17.78" y2="2.54" width="0.254" layer="94"/>
 </symbol>
-<symbol name="SCREEN">
+<symbol name="SCREEN" urn="urn:adsk.eagle:symbol:11839205/1" library_version="14" library_locally_modified="yes">
 <wire x1="-10.16" y1="10.16" x2="-0.762" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-0.762" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
@@ -8772,18 +8841,18 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="5.588" y1="0.762" x2="4.318" y2="-0.508" width="0.254" layer="94" curve="-90"/>
 <wire x1="4.318" y1="-0.508" x2="-6.858" y2="-0.508" width="0.254" layer="94"/>
 <wire x1="-6.858" y1="-0.508" x2="-8.128" y2="0.762" width="0.254" layer="94" curve="-90"/>
-<circle x="7.874" y="6.35" radius="1.27" width="0.254" layer="94"/>
-<circle x="7.874" y="2.286" radius="1.27" width="0.254" layer="94"/>
 <wire x1="7.874" y1="8.128" x2="7.874" y2="4.572" width="0.254" layer="94"/>
 <wire x1="7.874" y1="3.81" x2="7.874" y2="0.508" width="0.254" layer="94"/>
 <wire x1="-0.762" y1="10.16" x2="2.032" y2="15.494" width="0.254" layer="94"/>
 <wire x1="-0.762" y1="10.16" x2="-1.778" y2="14.478" width="0.254" layer="94"/>
+<circle x="7.874" y="6.35" radius="1.27" width="0.254" layer="94"/>
+<circle x="7.874" y="2.286" radius="1.27" width="0.254" layer="94"/>
 <pin name="VCC" x="-5.08" y="-7.62" length="middle" rot="R90"/>
 <pin name="GND" x="-2.54" y="-7.62" length="middle" rot="R90"/>
 <pin name="SCL" x="0" y="-7.62" length="middle" rot="R90"/>
 <pin name="SDA" x="2.54" y="-7.62" length="middle" rot="R90"/>
 </symbol>
-<symbol name="20PH">
+<symbol name="20PH" urn="urn:adsk.eagle:symbol:11839204/1" library_version="14" library_locally_modified="yes">
 <pin name="PIN1" x="-15.24" y="12.7" length="middle"/>
 <pin name="PIN2" x="-15.24" y="10.16" length="middle"/>
 <pin name="PIN3" x="-15.24" y="7.62" length="middle"/>
@@ -8810,7 +8879,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-10.16" y1="-15.24" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
 <text x="-10.16" y="18.034" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="SWITCH-NO">
+<symbol name="SWITCH-NO" urn="urn:adsk.eagle:symbol:11839210/1" library_version="14" library_locally_modified="yes">
 <wire x1="-2.54" y1="0" x2="2.54" y2="0.889" width="0.254" layer="94"/>
 <circle x="-2.54" y="0" radius="0.2839" width="0" layer="94"/>
 <circle x="2.54" y="0" radius="0.2839" width="0" layer="94"/>
@@ -8819,7 +8888,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="CRYSTAL">
+<symbol name="CRYSTAL" urn="urn:adsk.eagle:symbol:11839202/1" library_version="14" library_locally_modified="yes">
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
@@ -8835,7 +8904,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="PCT2075">
+<symbol name="PCT2075" urn="urn:adsk.eagle:symbol:11839201/1" library_version="14" library_locally_modified="yes">
 <pin name="SDA" x="-12.7" y="5.08" length="middle"/>
 <pin name="SCL" x="-12.7" y="2.54" length="middle"/>
 <pin name="OS" x="-12.7" y="0" length="middle"/>
@@ -8852,7 +8921,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PCF85363ATT">
+<deviceset name="PCF85363ATT" urn="urn:adsk.eagle:component:11839273/1" library_version="16">
 <gates>
 <gate name="1" symbol="RTC" x="0" y="-2.54"/>
 </gates>
@@ -8879,7 +8948,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TC58CVG1S3HRAIG">
+<deviceset name="TC58CVG1S3HRAIG" urn="urn:adsk.eagle:component:11839271/1" library_version="14" library_locally_modified="yes">
 <description>Serial Interface NAND</description>
 <gates>
 <gate name="G$1" symbol="TC58CVG1S3HRAIG" x="0" y="2.54"/>
@@ -8896,13 +8965,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="VCC" pad="P$8"/>
 <connect gate="G$1" pin="VSS" pad="P$4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11839247/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DSK-3R3H204T614-H2L">
+<deviceset name="DSK-3R3H204T614-H2L" urn="urn:adsk.eagle:component:11839272/2" library_version="14" library_locally_modified="yes">
 <gates>
 <gate name="1" symbol="C-US" x="0" y="0"/>
 </gates>
@@ -8912,13 +8984,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="1" pin="+" pad="+"/>
 <connect gate="1" pin="-" pad="-"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11839248/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOLEX-47491-0001">
+<deviceset name="MOLEX-47491-0001" urn="urn:adsk.eagle:component:11839274/2" library_version="14" library_locally_modified="yes">
 <gates>
 <gate name="1" symbol="USB" x="5.08" y="0"/>
 </gates>
@@ -8936,13 +9011,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="1" pin="PAD6" pad="PAD6"/>
 <connect gate="1" pin="VBUS" pad="VCC"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11839249/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DM3D-SF">
+<deviceset name="DM3D-SF" urn="urn:adsk.eagle:component:11839276/1" library_version="14" library_locally_modified="yes">
 <gates>
 <gate name="1" symbol="SDCARD" x="10.16" y="7.62"/>
 </gates>
@@ -8964,13 +9042,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="1" pin="VDD" pad="VDD"/>
 <connect gate="1" pin="VSS" pad="VSS"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11839251/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SCREEN">
+<deviceset name="SCREEN" urn="urn:adsk.eagle:component:11839270/5" library_version="16">
 <gates>
 <gate name="G$1" symbol="SCREEN" x="0" y="0"/>
 </gates>
@@ -8982,13 +9063,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="SDA" pad="P3"/>
 <connect gate="G$1" pin="VCC" pad="P0"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11839246/5"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOLEX-15-91-2200">
+<deviceset name="MOLEX-15-91-2200" urn="urn:adsk.eagle:component:11839269/3" library_version="14" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="20PH" x="0" y="0"/>
 </gates>
@@ -9016,13 +9100,46 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="PIN8" pad="PIN8"/>
 <connect gate="G$1" pin="PIN9" pad="PIN9"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11839245/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="F" package="20PH-F">
+<connects>
+<connect gate="G$1" pin="PIN1" pad="PIN1"/>
+<connect gate="G$1" pin="PIN10" pad="PIN10"/>
+<connect gate="G$1" pin="PIN11" pad="PIN11"/>
+<connect gate="G$1" pin="PIN12" pad="PIN12"/>
+<connect gate="G$1" pin="PIN13" pad="PIN13"/>
+<connect gate="G$1" pin="PIN14" pad="PIN14"/>
+<connect gate="G$1" pin="PIN15" pad="PIN15"/>
+<connect gate="G$1" pin="PIN16" pad="PIN16"/>
+<connect gate="G$1" pin="PIN17" pad="PIN17"/>
+<connect gate="G$1" pin="PIN18" pad="PIN18"/>
+<connect gate="G$1" pin="PIN19" pad="PIN19"/>
+<connect gate="G$1" pin="PIN2" pad="PIN2"/>
+<connect gate="G$1" pin="PIN20" pad="PIN20"/>
+<connect gate="G$1" pin="PIN3" pad="PIN3"/>
+<connect gate="G$1" pin="PIN4" pad="PIN4"/>
+<connect gate="G$1" pin="PIN5" pad="PIN5"/>
+<connect gate="G$1" pin="PIN6" pad="PIN6"/>
+<connect gate="G$1" pin="PIN7" pad="PIN7"/>
+<connect gate="G$1" pin="PIN8" pad="PIN8"/>
+<connect gate="G$1" pin="PIN9" pad="PIN9"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11853535/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="EVP-AEJB2A">
+<deviceset name="EVP-AEJB2A" urn="urn:adsk.eagle:component:11839268/1" library_version="14" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="SWITCH-NO" x="0" y="0"/>
 </gates>
@@ -9032,13 +9149,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="1" pad="A0 A1"/>
 <connect gate="G$1" pin="2" pad="B"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11839244/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ABS07W">
+<deviceset name="ABS07W" urn="urn:adsk.eagle:component:11839267/1" library_version="14" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
@@ -9048,13 +9168,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11839243/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PCT2075">
+<deviceset name="PCT2075" urn="urn:adsk.eagle:component:11839266/1" library_version="14" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="PCT2075" x="0" y="-2.54"/>
 </gates>
@@ -9071,7 +9194,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11214694/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11214694/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -11757,18 +11880,18 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <parts>
 <part name="BRAIN" library="microbuilder" deviceset="SAMD51PXXA" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
-<part name="RTC" library="Conservify" deviceset="PCF85363ATT" device="" package3d_urn="urn:adsk.eagle:package:10002685/1"/>
-<part name="U$3" library="Conservify" deviceset="TC58CVG1S3HRAIG" device=""/>
-<part name="U$4" library="Conservify" deviceset="TC58CVG1S3HRAIG" device=""/>
-<part name="U$5" library="Conservify" deviceset="TC58CVG1S3HRAIG" device=""/>
-<part name="U$6" library="Conservify" deviceset="TC58CVG1S3HRAIG" device=""/>
-<part name="U$7" library="Conservify" deviceset="DSK-3R3H204T614-H2L" device=""/>
+<part name="RTC" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="PCF85363ATT" device="" package3d_urn="urn:adsk.eagle:package:10002685/1"/>
+<part name="U$3" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="TC58CVG1S3HRAIG" device="" package3d_urn="urn:adsk.eagle:package:11839247/1"/>
+<part name="U$4" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="TC58CVG1S3HRAIG" device="" package3d_urn="urn:adsk.eagle:package:11839247/1"/>
+<part name="U$5" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="TC58CVG1S3HRAIG" device="" package3d_urn="urn:adsk.eagle:package:11839247/1"/>
+<part name="U$6" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="TC58CVG1S3HRAIG" device="" package3d_urn="urn:adsk.eagle:package:11839247/1"/>
+<part name="U$7" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="DSK-3R3H204T614-H2L" device="" package3d_urn="urn:adsk.eagle:package:11839248/2"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SMB" package3d_urn="urn:adsk.eagle:package:43404/2"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="FLASH" library="microbuilder" deviceset="SPIFLASH_SOIC8" device="208MIL"/>
-<part name="U$8" library="Conservify" deviceset="MOLEX-47491-0001" device=""/>
-<part name="U$9" library="Conservify" deviceset="DM3D-SF" device=""/>
-<part name="U$10" library="Conservify" deviceset="SCREEN" device=""/>
+<part name="U$8" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="MOLEX-47491-0001" device="" package3d_urn="urn:adsk.eagle:package:11839249/2"/>
+<part name="U$9" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="DM3D-SF" device="" package3d_urn="urn:adsk.eagle:package:11839251/1"/>
+<part name="U$10" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="SCREEN" device="" package3d_urn="urn:adsk.eagle:package:11839246/5"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
@@ -11786,13 +11909,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
 <part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
-<part name="UPPER" library="Conservify" deviceset="MOLEX-15-91-2200" device=""/>
-<part name="LOWER" library="Conservify" deviceset="MOLEX-15-91-2200" device=""/>
-<part name="BTN1" library="Conservify" deviceset="EVP-AEJB2A" device=""/>
-<part name="BTN2" library="Conservify" deviceset="EVP-AEJB2A" device=""/>
-<part name="BTN3" library="Conservify" deviceset="EVP-AEJB2A" device=""/>
-<part name="U$14" library="Conservify" deviceset="ABS07W" device=""/>
-<part name="UTEMP" library="Conservify" deviceset="PCT2075" device="" package3d_urn="urn:adsk.eagle:package:11214694/1"/>
+<part name="UPPER" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="MOLEX-15-91-2200" device="F" package3d_urn="urn:adsk.eagle:package:11853535/2" value="MOLEX-15-91-2200F"/>
+<part name="LOWER" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="MOLEX-15-91-2200" device="F" package3d_urn="urn:adsk.eagle:package:11853535/2" value="MOLEX-15-91-2200F"/>
+<part name="BTN1" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="EVP-AEJB2A" device="" package3d_urn="urn:adsk.eagle:package:11839244/1"/>
+<part name="BTN2" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="EVP-AEJB2A" device="" package3d_urn="urn:adsk.eagle:package:11839244/1"/>
+<part name="BTN3" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="EVP-AEJB2A" device="" package3d_urn="urn:adsk.eagle:package:11839244/1"/>
+<part name="U$14" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="ABS07W" device="" package3d_urn="urn:adsk.eagle:package:11839243/1"/>
+<part name="UTEMP" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="PCT2075" device="" package3d_urn="urn:adsk.eagle:package:11214694/2"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
@@ -12784,6 +12907,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <junction x="137.16" y="60.96"/>
 <wire x1="137.16" y1="53.34" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$9" gate="1" pin="VSS"/>
+<wire x1="264.16" y1="-91.44" x2="276.86" y2="-91.44" width="0.1524" layer="91"/>
+<label x="271.78" y="-91.44" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="3V3" class="0">
 <segment>
@@ -12953,6 +13081,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="-114.3" x2="137.16" y2="-114.3" width="0.1524" layer="91"/>
 <label x="132.08" y="-114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$9" gate="1" pin="VDD"/>
+<wire x1="264.16" y1="-93.98" x2="276.86" y2="-93.98" width="0.1524" layer="91"/>
+<label x="271.78" y="-93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
