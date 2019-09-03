@@ -272,6 +272,27 @@
                     "name": "Silkscreen Bottom",
                     "polarity": "positive",
                     "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Vcut"
+                    },
+                    "filename_format": "%PREFIX/%FF.gbr",
+                    "layers": [
+                        102
+                    ],
+                    "milling": false,
+                    "name": "",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
                 }
             ],
             "version": "RS274X"

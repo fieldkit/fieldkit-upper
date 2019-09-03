@@ -487,6 +487,73 @@ shrink quad flat pack, square</description>
 <text x="-1.905" y="0.635" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.905" y="-0.381" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="FIDUCIAL-1X2.5">
+<circle x="0" y="0" radius="1.1" width="1.2" layer="29"/>
+<circle x="0" y="0" radius="1.1" width="1.2" layer="39"/>
+<circle x="0" y="0" radius="1.1" width="1.2" layer="41"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<text x="-0.508" y="-1.016" size="0.4064" layer="25">1mm</text>
+</package>
+<package name="PASS-ROUND">
+<description>&lt;b&gt;FIDUCIAL MARKER&lt;/b&gt;&lt;p&gt;
+round, layers 1 + 16 + 21 + 39 + 49</description>
+<circle x="0" y="0" radius="1.27" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="1.27" width="0.1524" layer="49"/>
+<circle x="0" y="0" radius="1.27" width="0.1524" layer="1"/>
+<circle x="0" y="0" radius="1.27" width="0.1524" layer="16"/>
+<circle x="0" y="0" radius="2.54" width="0" layer="29"/>
+<circle x="0" y="0" radius="2.54" width="0" layer="30"/>
+<wire x1="0" y1="0.508" x2="0.508" y2="0" width="1.4224" layer="49" curve="-90" cap="flat"/>
+<wire x1="-0.508" y1="0" x2="0" y2="-0.508" width="1.4224" layer="49" curve="90" cap="flat"/>
+<wire x1="0" y1="0.508" x2="0.508" y2="0" width="1.4224" layer="49" curve="-90" cap="flat"/>
+<wire x1="-0.508" y1="0" x2="0" y2="-0.508" width="1.4224" layer="49" curve="90" cap="flat"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="49"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="49"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="49"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="49"/>
+<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="1"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.524" width="0.1524" layer="1"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.524" width="0.1524" layer="1"/>
+<wire x1="2.54" y1="0" x2="1.524" y2="0" width="0.1524" layer="1"/>
+<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="16"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.524" width="0.1524" layer="16"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.524" width="0.1524" layer="16"/>
+<wire x1="2.54" y1="0" x2="1.524" y2="0" width="0.1524" layer="16"/>
+<wire x1="0.0254" y1="0.5842" x2="0.5842" y2="0.0254" width="1.1176" layer="16" curve="-90" cap="flat"/>
+<wire x1="0.0254" y1="0.5842" x2="0.5842" y2="0.0254" width="1.1176" layer="1" curve="-90" cap="flat"/>
+<wire x1="-0.5842" y1="-0.0254" x2="-0.0254" y2="-0.5842" width="1.1176" layer="16" curve="90" cap="flat"/>
+<wire x1="-0.5842" y1="-0.0254" x2="-0.0254" y2="-0.5842" width="1.1176" layer="1" curve="90" cap="flat"/>
+</package>
+<package name="FIDUCIAL_0.5MM">
+<wire x1="-0.475" y1="0" x2="0" y2="0.475" width="0.25" layer="29" curve="-90"/>
+<wire x1="0" y1="0.475" x2="0.475" y2="-0.025" width="0.25" layer="29" curve="-90"/>
+<wire x1="0.475" y1="-0.025" x2="0" y2="-0.475" width="0.25" layer="29" curve="-90"/>
+<wire x1="0" y1="-0.475" x2="-0.475" y2="0" width="0.25" layer="29" curve="-90"/>
+<wire x1="-0.475" y1="0" x2="0" y2="0.475" width="0.25" layer="41" curve="-90"/>
+<wire x1="0" y1="0.475" x2="0.475" y2="-0.025" width="0.25" layer="41" curve="-90"/>
+<wire x1="0.475" y1="-0.025" x2="0" y2="-0.475" width="0.25" layer="41" curve="-90"/>
+<wire x1="0" y1="-0.475" x2="-0.475" y2="0" width="0.25" layer="41" curve="-90"/>
+<wire x1="-0.475" y1="0" x2="0" y2="0.475" width="0.25" layer="39" curve="-90"/>
+<wire x1="0" y1="0.475" x2="0.475" y2="-0.025" width="0.25" layer="39" curve="-90"/>
+<wire x1="0.475" y1="-0.025" x2="0" y2="-0.475" width="0.25" layer="39" curve="-90"/>
+<wire x1="0" y1="-0.475" x2="-0.475" y2="0" width="0.25" layer="39" curve="-90"/>
+<smd name="1" x="0" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL_1MM">
+<wire x1="-0.75" y1="0" x2="0" y2="0.75" width="0.5" layer="29" curve="-90"/>
+<wire x1="0" y1="0.75" x2="0.75" y2="0" width="0.5" layer="29" curve="-90"/>
+<wire x1="0.75" y1="0" x2="0" y2="-0.75" width="0.5" layer="29" curve="-90"/>
+<wire x1="0" y1="-0.75" x2="-0.75" y2="0" width="0.5" layer="29" curve="-90"/>
+<wire x1="-0.75" y1="0" x2="0" y2="0.75" width="0.5" layer="41" curve="-90"/>
+<wire x1="0" y1="0.75" x2="0.75" y2="0" width="0.5" layer="41" curve="-90"/>
+<wire x1="0.75" y1="0" x2="0" y2="-0.75" width="0.5" layer="41" curve="-90"/>
+<wire x1="0" y1="-0.75" x2="-0.75" y2="0" width="0.5" layer="41" curve="-90"/>
+<wire x1="-0.75" y1="0" x2="0" y2="0.75" width="0.5" layer="39" curve="-90"/>
+<wire x1="0" y1="0.75" x2="0.75" y2="0" width="0.5" layer="39" curve="-90"/>
+<wire x1="0.75" y1="0" x2="0" y2="-0.75" width="0.5" layer="39" curve="-90"/>
+<wire x1="0" y1="-0.75" x2="-0.75" y2="0" width="0.5" layer="39" curve="-90"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SAMD51PXXA_PORTA">
@@ -667,6 +734,11 @@ shrink quad flat pack, square</description>
 <pin name="WP#/IO2" x="-15.24" y="-2.54" length="short"/>
 <text x="-12.7" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-10.16" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -863,6 +935,41 @@ shrink quad flat pack, square</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" prefix="FID">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+&lt;p&gt;Various fiducial points for machine vision alignment.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1X2.5" package="FIDUCIAL-1X2.5">
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="ROUND" package="PASS-ROUND">
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_0.5MM" package="FIDUCIAL_0.5MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_1MM" package="FIDUCIAL_1MM">
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11922,6 +12029,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value=".1u"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="4.7u"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
+<part name="FID1" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
+<part name="FID2" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
+<part name="FID3" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
+<part name="FID4" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
+<part name="FID5" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
+<part name="FID6" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -12104,6 +12217,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="NAME" x="120.65" y="-112.8014" size="1.778" layer="95"/>
 <attribute name="VALUE" x="120.65" y="-117.602" size="1.778" layer="96"/>
 </instance>
+<instance part="FID1" gate="G$1" x="307.34" y="-101.6" smashed="yes"/>
+<instance part="FID2" gate="G$1" x="307.34" y="-106.68" smashed="yes"/>
+<instance part="FID3" gate="G$1" x="307.34" y="-111.76" smashed="yes"/>
+<instance part="FID4" gate="G$1" x="307.34" y="-116.84" smashed="yes"/>
+<instance part="FID5" gate="G$1" x="307.34" y="-121.92" smashed="yes"/>
+<instance part="FID6" gate="G$1" x="307.34" y="-127" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -12570,7 +12689,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="220.98" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MOD_G1" class="0">
+<net name="EEPROM_PROT" class="0">
 <segment>
 <pinref part="BRAIN" gate="G$2" pin="PB01"/>
 <wire x1="78.74" y1="83.82" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
@@ -12594,7 +12713,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="271.78" y="27.94" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="MOD_G3" class="0">
+<net name="HOTSWAP_INT" class="0">
 <segment>
 <pinref part="BRAIN" gate="G$2" pin="PB03"/>
 <wire x1="78.74" y1="78.74" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
@@ -13088,7 +13207,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="271.78" y="-93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="VBACKUP" class="0">
 <segment>
 <pinref part="U$7" gate="1" pin="+"/>
 <pinref part="D1" gate="G$1" pin="C"/>
@@ -13097,6 +13216,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="7.62" y1="-43.18" x2="7.62" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-43.18" x2="7.62" y2="-43.18" width="0.1524" layer="91"/>
 <junction x="7.62" y="-43.18"/>
+<label x="12.7" y="-43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="UPPER" gate="G$1" pin="PIN10"/>
+<wire x1="231.14" y1="58.42" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
+<label x="213.36" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -13217,13 +13342,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="UPPER" gate="G$1" pin="PIN9"/>
 <wire x1="231.14" y1="60.96" x2="210.82" y2="60.96" width="0.1524" layer="91"/>
 <label x="213.36" y="60.96" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="UPPER_PIN10" class="0">
-<segment>
-<pinref part="UPPER" gate="G$1" pin="PIN10"/>
-<wire x1="231.14" y1="58.42" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
-<label x="213.36" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UPPER_PIN13" class="0">
