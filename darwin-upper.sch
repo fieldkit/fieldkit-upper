@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -8792,6 +8792,21 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <hole x="2.2" y="-1.27" drill="1.58"/>
 <hole x="2.2" y="-21.59" drill="1.58"/>
 </package>
+<package name="TC2030-IDC" urn="urn:adsk.eagle:footprint:16969549/1" library_version="59">
+<hole x="0" y="0" drill="0.9906"/>
+<hole x="5.08" y="1.016" drill="0.9906"/>
+<hole x="5.08" y="-1.016" drill="0.9906"/>
+<hole x="0" y="2.54" drill="2.3749"/>
+<hole x="0" y="-2.54" drill="2.3749"/>
+<hole x="3.175" y="2.54" drill="2.3749"/>
+<hole x="3.175" y="-2.54" drill="2.3749"/>
+<smd name="VCC" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="SWDIO/TMS" x="1.27" y="0.508" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="NRESET" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="SWCLK/TCK" x="2.54" y="0.508" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="GND" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="SWO/TDO" x="3.81" y="0.508" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP50P490X110-10" urn="urn:adsk.eagle:package:10002685/1" type="model" library_version="16">
@@ -8851,6 +8866,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <package3d name="ABS07W" urn="urn:adsk.eagle:package:11839243/1" type="box" library_version="14" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="ABS07W"/>
+</packageinstances>
+</package3d>
+<package3d name="TC2030-IDC" urn="urn:adsk.eagle:package:16969550/1" type="box" library_version="59">
+<packageinstances>
+<packageinstance name="TC2030-IDC"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -9023,6 +9043,18 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 <text x="-7.62" y="10.414" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="TC2030-IDC" urn="urn:adsk.eagle:symbol:16969548/1" library_version="59">
+<pin name="VCC" x="-12.7" y="2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="0" length="middle"/>
+<pin name="SWDIO" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="SWCLK" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SWO" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="RESET" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9301,6 +9333,29 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:11214694/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TAG-CONNECT" urn="urn:adsk.eagle:component:16969551/1" prefix="J" library_version="59">
+<gates>
+<gate name="G$1" symbol="TC2030-IDC" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TC2030-IDC">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RESET" pad="NRESET"/>
+<connect gate="G$1" pin="SWCLK" pad="SWCLK/TCK"/>
+<connect gate="G$1" pin="SWDIO" pad="SWDIO/TMS"/>
+<connect gate="G$1" pin="SWO" pad="SWO/TDO"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16969550/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -12034,6 +12089,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="FID4" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 <part name="FID5" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
 <part name="FID6" library="microbuilder" deviceset="FIDUCIAL" device="_1MM"/>
+<part name="J1" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="TAG-CONNECT" device="" package3d_urn="urn:adsk.eagle:package:16969550/1"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -12221,6 +12278,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="FID4" gate="G$1" x="307.34" y="-116.84" smashed="yes"/>
 <instance part="FID5" gate="G$1" x="307.34" y="-121.92" smashed="yes"/>
 <instance part="FID6" gate="G$1" x="307.34" y="-127" smashed="yes"/>
+<instance part="J1" gate="G$1" x="330.2" y="-27.94" smashed="yes"/>
+<instance part="R6" gate="G$1" x="365.76" y="-27.94" smashed="yes">
+<attribute name="NAME" x="361.95" y="-26.4414" size="1.778" layer="95"/>
+<attribute name="VALUE" x="361.95" y="-31.242" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12823,6 +12885,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="231.14" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
 <label x="213.36" y="81.28" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="SWCLK"/>
+<wire x1="345.44" y1="-27.94" x2="360.68" y2="-27.94" width="0.1524" layer="91"/>
+<label x="358.14" y="-27.94" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="SWDIO" class="0">
 <segment>
@@ -12834,6 +12902,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="UPPER" gate="G$1" pin="PIN20"/>
 <wire x1="261.62" y1="81.28" x2="281.94" y2="81.28" width="0.1524" layer="91"/>
 <label x="279.4" y="81.28" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="SWDIO"/>
+<wire x1="345.44" y1="-25.4" x2="360.68" y2="-25.4" width="0.1524" layer="91"/>
+<label x="358.14" y="-25.4" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13041,6 +13114,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="264.16" y1="-91.44" x2="276.86" y2="-91.44" width="0.1524" layer="91"/>
 <label x="271.78" y="-91.44" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="317.5" y1="-27.94" x2="302.26" y2="-27.94" width="0.1524" layer="91"/>
+<label x="304.8" y="-27.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="3V3" class="0">
 <segment>
@@ -13215,6 +13293,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="SD" gate="1" pin="VDD"/>
 <wire x1="264.16" y1="-93.98" x2="276.86" y2="-93.98" width="0.1524" layer="91"/>
 <label x="271.78" y="-93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="VCC"/>
+<wire x1="317.5" y1="-25.4" x2="302.26" y2="-25.4" width="0.1524" layer="91"/>
+<label x="304.8" y="-25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="370.84" y1="-27.94" x2="378.46" y2="-27.94" width="0.1524" layer="91"/>
+<label x="375.92" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VBACKUP" class="0">
@@ -13445,6 +13533,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="231.14" y1="66.04" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
 <label x="213.36" y="66.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="RESET"/>
+<wire x1="345.44" y1="-33.02" x2="360.68" y2="-33.02" width="0.1524" layer="91"/>
+<label x="358.14" y="-33.02" size="1.778" layer="95" align="bottom-right"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -13454,6 +13547,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="68.58" x2="137.16" y2="68.58" width="0.1524" layer="91"/>
 <junction x="144.78" y="68.58"/>
+</segment>
+</net>
+<net name="SWO" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="SWO"/>
+<wire x1="345.44" y1="-30.48" x2="360.68" y2="-30.48" width="0.1524" layer="91"/>
+<label x="358.14" y="-30.48" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
 </nets>
