@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -10,6 +10,18 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="PWR" color="16" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="GND" color="23" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
@@ -80,8 +92,13 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="tPlaceRed" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -91,8 +108,10 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
@@ -133,6 +152,8 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -141,7 +162,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZGRkM2Mx" projecturn="a.cGVyc29uYWw6dWUyZGRkM2MxIzIwMTgwNTA0MTMwNDQ3NTc2" f3durn="urn:adsk.wipprod:dm.lineage:B8w4oF1WQnCwF1kTAVzY8Q" pcbguid="5f6603c8-1044-428d-87b9-4eb708af9043" lastpulledtime="" lastsyncedchangeguid="898615ed-fd74-069b-006d-062865fd968c"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZGRkM2Mx" projecturn="a.cGVyc29uYWw6dWUyZGRkM2MxIzIwMTgwNTA0MTMwNDQ3NTc2" f3durn="urn:adsk.wipprod:dm.lineage:B8w4oF1WQnCwF1kTAVzY8Q" pcbguid="5f6603c8-1044-428d-87b9-4eb708af9043" lastpulledtime="" lastsyncedchangeguid="898615ed-fd74-069b-006d-062865fd968c" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="" lastpushedtime="" linktopcb3d="%12"/>
 <plain>
 <wire x1="3" y1="60.5" x2="3" y2="14.5" width="0" layer="20"/>
 <wire x1="3" y1="14.5" x2="5.5" y2="12" width="0" layer="20" curve="90"/>
@@ -2856,7 +2877,7 @@ design rules under a new name.</description>
 <element name="BTN1" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" package="SKRTLAE010" package3d_urn="urn:adsk.eagle:package:15671107/2" value="SKRTLAE010" x="12" y="13.5" smashed="yes"/>
 <element name="BTN2" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" package="SKRTLAE010" package3d_urn="urn:adsk.eagle:package:15671107/2" value="SKRTLAE010" x="22.25" y="13.5" smashed="yes"/>
 <element name="BTN3" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" package="SKRTLAE010" package3d_urn="urn:adsk.eagle:package:15671107/2" value="SKRTLAE010" x="32.5" y="13.5" smashed="yes"/>
-<element name="U$14" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" package="ABS07W" package3d_urn="urn:adsk.eagle:package:11839243/1" value="ABS07W" x="64.77" y="15.0876" smashed="yes" rot="R270"/>
+<element name="XTAL" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" package="ABS07W" package3d_urn="urn:adsk.eagle:package:11839243/1" value="ABS07W" x="64.77" y="15.0876" smashed="yes" rot="R270"/>
 <element name="UTEMP" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" package="SO8" package3d_urn="urn:adsk.eagle:package:11214694/2" value="PCT2075" x="92.5" y="43.5" smashed="yes">
 <attribute name="NAME" x="92.9335" y="43.518" size="1" layer="25" rot="R90" align="bottom-center"/>
 </element>
@@ -3917,6 +3938,34 @@ design rules under a new name.</description>
 <wire x1="70.6492" y1="39.9288" x2="68.4298" y2="37.7094" width="0.1524" layer="1"/>
 <wire x1="68.4298" y1="37.7094" x2="68.4298" y2="37.3048" width="0.1524" layer="1"/>
 <wire x1="68.4298" y1="37.3048" x2="68.125" y2="37" width="0.1524" layer="1"/>
+<wire x1="85.65" y1="45.5" x2="94.875" y2="47" width="0" layer="19" extent="1-1"/>
+<wire x1="84.582" y1="44.0436" x2="84.582" y2="45.4152" width="0" layer="19" extent="2-2"/>
+<wire x1="71.77" y1="46.385" x2="84.582" y2="45.4152" width="0" layer="19" extent="2-16"/>
+<wire x1="70.6492" y1="39.9288" x2="71.77" y2="46.385" width="0" layer="19" extent="1-16"/>
+<wire x1="62.4222" y1="36.6684" x2="67.0896" y2="36.6908" width="0" layer="19" extent="1-1"/>
+<wire x1="58.88" y1="33.95" x2="62.28" y2="35.35" width="0" layer="19" extent="1-1"/>
+<wire x1="56.2052" y1="30.3048" x2="56.51" y2="34" width="0" layer="19" extent="1-1"/>
+<wire x1="54.188" y1="27.1876" x2="56.2052" y2="30.3048" width="0" layer="19" extent="1-1"/>
+<wire x1="72.68" y1="35.35" x2="68.125" y2="37" width="0" layer="19" extent="1-1"/>
+<wire x1="76.121" y1="33.955" x2="74.585" y2="35.397" width="0" layer="19" extent="1-1"/>
+<wire x1="75.3856" y1="29.7428" x2="76.125" y2="32.8" width="0" layer="19" extent="1-1"/>
+<wire x1="75.3954" y1="26.7594" x2="75.3856" y2="29.7428" width="0" layer="19" extent="1-1"/>
+<wire x1="74.08" y1="23.15" x2="74.08" y2="26.75" width="0" layer="19" extent="1-1"/>
+<wire x1="72.68" y1="20.15" x2="72.4236" y2="22.924" width="0" layer="19" extent="1-1"/>
+<wire x1="70.3302" y1="17.6556" x2="72.617" y2="17.635" width="0" layer="19" extent="1-1"/>
+<wire x1="76.6654" y1="21.921" x2="74.08" y2="23.15" width="0" layer="19" extent="1-1"/>
+<wire x1="65.8958" y1="18.8346" x2="70.2646" y2="18.8346" width="0" layer="19" extent="1-1"/>
+<wire x1="59.219" y1="15.712" x2="62.289" y2="18.8346" width="0" layer="19" extent="1-1"/>
+<wire x1="56.563" y1="19.223" x2="57.8356" y2="15.728" width="0" layer="19" extent="1-1"/>
+<wire x1="87.1302" y1="16.578" x2="78.3164" y2="19.5712" width="0" layer="19" extent="1-1"/>
+<wire x1="94.7502" y1="16.578" x2="89.4588" y2="15.24" width="0" layer="19" extent="1-2"/>
+<wire x1="59.0169" y1="47.9298" x2="69.4944" y2="46.6344" width="0" layer="19" extent="1-1"/>
+<wire x1="50.9484" y1="45.9188" x2="59.0169" y2="47.9298" width="0" layer="19" extent="1-1"/>
+<wire x1="87.1302" y1="30.04" x2="76.6264" y2="26.7808" width="0" layer="19" extent="1-1"/>
+<wire x1="94.7502" y1="30.04" x2="88.6968" y2="29.8704" width="0" layer="19" extent="1-1"/>
+<wire x1="41.646" y1="24.276" x2="52.957" y2="27.1892" width="0" layer="19" extent="1-1"/>
+<wire x1="26.03" y1="47.73" x2="50.9484" y2="45.9188" width="0" layer="19" extent="1-1"/>
+<wire x1="27.32" y1="59.74" x2="26.03" y2="47.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <polygon width="0.254" layer="15">
@@ -4385,13 +4434,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$3">
 <contactref element="RTC" pad="1"/>
-<contactref element="U$14" pad="P$2"/>
+<contactref element="XTAL" pad="P$2"/>
 <wire x1="62.1264" y1="15.728" x2="62.8796" y2="15.728" width="0.1524" layer="1"/>
 <wire x1="62.8796" y1="15.728" x2="64.77" y2="13.8376" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="RTC" pad="2"/>
-<contactref element="U$14" pad="P$1"/>
+<contactref element="XTAL" pad="P$1"/>
 <wire x1="64.6604" y1="16.228" x2="64.77" y2="16.3376" width="0.1524" layer="1"/>
 <wire x1="62.1264" y1="16.228" x2="64.6604" y2="16.228" width="0.1524" layer="1"/>
 </signal>
