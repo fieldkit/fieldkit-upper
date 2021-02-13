@@ -13408,7 +13408,7 @@ Memory</text>
 <sheet>
 <description>Peripherals</description>
 <plain>
-<text x="183.388" y="131.318" size="1.778" layer="96">.2f</text>
+<text x="183.642" y="132.08" size="1.27" layer="96" ratio="15">.2f</text>
 <wire x1="86.36" y1="0" x2="86.36" y2="210.82" width="0.1524" layer="94" style="longdash"/>
 <text x="60.96" y="191.77" size="5.08" layer="97" font="vector" align="bottom-right">CONNECTORS</text>
 <text x="93.98" y="203.708" size="1.778" layer="97" ratio="15">Data Memory</text>
@@ -13469,7 +13469,7 @@ Memory</text>
 </instance>
 <instance part="R1" gate="G$1" x="190.5" y="147.32" smashed="yes" rot="R270">
 <attribute name="NAME" x="188.1124" y="147.5486" size="1.778" layer="95" align="bottom-right"/>
-<attribute name="VALUE" x="188.1124" y="146.8374" size="1.778" layer="96" align="top-right"/>
+<attribute name="VALUE" x="187.6044" y="147.3454" size="1.27" layer="96" ratio="15" align="top-right"/>
 </instance>
 <instance part="XTAL" gate="G$1" x="205.74" y="144.78" smashed="yes">
 <attribute name="NAME" x="203.2" y="147.066" size="1.778" layer="95"/>
@@ -13548,7 +13548,7 @@ Memory</text>
 <instance part="J1" gate="G$1" x="35.56" y="15.24" smashed="yes"/>
 <instance part="R6" gate="G$1" x="66.04" y="20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="70.612" y="22.3774" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="72.136" y="20.32" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="70.866" y="20.066" size="1.27" layer="96" ratio="15" rot="R180"/>
 </instance>
 <instance part="SUPPLY6" gate="GND" x="236.22" y="73.66" smashed="yes"/>
 <instance part="SUPPLY7" gate="GND" x="215.9" y="73.66" smashed="yes"/>
